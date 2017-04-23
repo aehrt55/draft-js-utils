@@ -1,5 +1,7 @@
 import { EditorState } from 'draft-js';
-import { update } from './ContentStateInlineStyle';
+import ContentStateInlineStyle from './ContentStateInlineStyle';
+
+const { update } = ContentStateInlineStyle;
 
 export default {
   updateInlineStyle: (editorState, updater) => {
