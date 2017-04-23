@@ -1,1 +1,1 @@
-export RichUtils from 'RichUtils';
+export RichUtils from './RichUtils';
