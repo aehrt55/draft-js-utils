@@ -1,5 +1,5 @@
 export default {
-  update: (contentState, selectionState, update) => {
+  update: (contentState, selectionState, updater) => {
     const startKey = selectionState.getStartKey();
     const endKey = selectionState.getEndKey();
     const startOffset = selectionState.getStartOffset();
@@ -26,7 +26,7 @@ export default {
       }
       return block.update('characterList', (characterList) => characterList.map((characterMetaData, index) => {
         if (sliceStart <= index && index <= sliceEnd) {
-          return characterMetaData.update('style', update);
+          return characterMetaData.update('style', updater);
         }
         return characterMetaData;
       }));
