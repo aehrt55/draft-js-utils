@@ -12,7 +12,7 @@
     "url": "git+ssh://git@github.com/aehrt55/draft-js-utils.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/aehrt55/draft-js-utils/issues"
   },
