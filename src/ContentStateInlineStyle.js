@@ -25,7 +25,7 @@ export default {
         sliceEnd = (blockKey === endKey) ? endOffset : block.getLength();
       }
       return block.update('characterList', (characterList) => characterList.map((characterMetaData, index) => {
-        if (sliceStart <= index && index <= sliceEnd) {
+        if (sliceStart <= index && index < sliceEnd) {
           return characterMetaData.update('style', updater);
         }
         return characterMetaData;
